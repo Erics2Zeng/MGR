@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tongjie.accessgate.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.tongjie.accessgate.model.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="open_id" jdbcType="VARCHAR" property="openId" />
+    <result column="car_id" jdbcType="INTEGER" property="carId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="phone" jdbcType="CHAR" property="phone" />
+    <result column="expire_time" jdbcType="TIMESTAMP" property="expireTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+</mapper>
