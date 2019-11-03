@@ -41,8 +41,8 @@ public class ${modelNameUpperCamel}Controller{
          return ResponseBo.ok(${modelNameLowerCamel});
     }
 
-    @Postapping("/list")
-    public Map<String, Object>  list(  @RequestBody  ${modelNameUpperCamel} ${modelNameLowerCamel} ,int pageNum,int pageSize ) {
+    @PostMapping("/list")
+    public Map<String, Object>  list(${modelNameUpperCamel} ${modelNameLowerCamel} ,int pageNum,int pageSize ) {
          return this. ${modelNameLowerCamel}Service.selectByPageNumSize(pageNum,pageSize,()->${modelNameLowerCamel}Service.select(${modelNameLowerCamel}));
     }
 
