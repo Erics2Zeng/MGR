@@ -122,6 +122,7 @@ public class CodeGenerator {
         jdbcConnectionConfiguration.addProperty("nullCatalogMeansCurrent","true");
         context.setJdbcConnectionConfiguration(jdbcConnectionConfiguration);
 
+
 //       该配置会使生产的Mapper自动继承MyMapper
         PluginConfiguration pluginConfiguration = new PluginConfiguration();
         pluginConfiguration.setConfigurationType("tk.mybatis.mapper.generator.MapperPlugin");
